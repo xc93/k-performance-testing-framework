@@ -1,0 +1,4 @@
+collatz10.lambdasubst 0.02 0.01 0.00
+collatz100.lambdasubst 0.06 0.05 0.00
+collatz1000.lambdasubst 0.84 0.83 0.01
+collatz10000.lambdasubst 12.10 12.08 0.01
