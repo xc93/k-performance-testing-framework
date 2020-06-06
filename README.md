@@ -1,0 +1,1 @@
+We test and compare the performance of the LLVM-backend of K with other programming languages, rewriting systems, and language semantics frameworks. Please refer to the README files in each sub-directory for manuals. 
