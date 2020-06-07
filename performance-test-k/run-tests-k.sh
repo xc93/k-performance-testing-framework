@@ -24,7 +24,7 @@ function time_program ()
   local prog_path=$lang/test-programs/$prog.$lang
   local lang_kompiled_dir=$lang/$lang-kompiled
   local kore_file_path=$prog-$lang.kore
-  kast $prog_path -d $lang -o kore > $kore_file_path
+  kast $prog_path -d $lang --expand-macros -o kore > $kore_file_path
   local time_result=`( timeout $TIMEOUT /usr/bin/time -f "%e %U %S" llvm-krun -d $lang_kompiled_dir -c PGM $prog-$lang.kore Pgm korefile ) 2>&1 1>/dev/null`
   rm -f $kore_file_path
   if [[ "$time_result" == *"Terminated"* ]]; 
