@@ -3,17 +3,11 @@ factorial100.lambdasubst 0.01 0.01 0.00
 factorial1000.lambdasubst 0.02 0.01 0.00
 factorial10000.lambdasubst 0.08 0.07 0.01
 factorial100000.lambdasubst 2.05 1.94 0.11
-factorial1000000.lambdasubst /home/xc/repos/k/k-distribution/target/release/k/bin/llvm-krun: line 226: 22025 Killed                  $debug "$dir"/interpreter "$input_file" $depth "$output_file"
-Command exited with non-zero status 137
-57.23 49.27 2.59
 factorialtailrec10.lambdasubst 0.02 0.02 0.00
 factorialtailrec100.lambdasubst 0.02 0.01 0.00
 factorialtailrec1000.lambdasubst 0.03 0.02 0.00
 factorialtailrec10000.lambdasubst 0.11 0.11 0.00
 factorialtailrec100000.lambdasubst 2.35 2.33 0.01
-factorialtailrec1000000.lambdasubst /home/xc/repos/k/k-distribution/target/release/k/bin/llvm-krun: line 226: 22582 Killed                  $debug "$dir"/interpreter "$input_file" $depth "$output_file"
-Command exited with non-zero status 137
-50.61 40.82 2.73
 collatz10.lambdasubst 0.02 0.02 0.00
 collatz100.lambdasubst 0.06 0.06 0.00
 collatz1000.lambdasubst 0.87 0.87 0.00
