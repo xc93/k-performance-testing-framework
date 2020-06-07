@@ -15,9 +15,9 @@ This K performance testing framework can run multiple programs in multiple progr
 
 # Run performance tests.
 
-Run `./run-tests-k.sh test-profile`. You may replace `test-profile` with other testing profiles.
+Run `./run-tests-k.sh testing-profile`. You may replace `testing-profile` with other testing profiles.
   * Default timeout is 60 seconds. You may change it by changing `TIMEOUT` in `run-tests-k.sh`, line 3. 
-  * Comment out `remove_kompiled_definitions $1` in `run-tests-k.sh`, line 58, to avoid re-kompiling the definitions.  
+  * Comment out `remove_kompiled_definitions $1` in `run-tests-k.sh`, line 58, to avoid re-kompiling the definitions.
 
-The testing results will be output to file `test-profile-result` in CSV format. Each line consists of a test program, real/user/sys times in seconds. 
+The testing results will be output to file `testing-profile-result` in CSV format. Each line consists of a test program, real/user/sys times in seconds. 
 

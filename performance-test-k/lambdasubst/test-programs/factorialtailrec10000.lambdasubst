@@ -1,0 +1,5 @@
+let input = 10000 in
+(let rec factt n product =
+    (if n <= 1 then product
+     else (factt (n - 1) (product * n) ))
+in (factt input 1))

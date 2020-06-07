@@ -1,4 +1,4 @@
-let bound = 10 in
+let bound = 100 in
 (let rec collatz x acc =
     (if x <= 1 then acc
      else (if (x / 2) * 2 = x then (collatz (x / 2) (acc + 1))

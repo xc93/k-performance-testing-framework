@@ -5,7 +5,7 @@ TIMEOUT="60s"
 function kompile_semantics ()
 { # argument $1: programming language
   echo "kompiling $1..."
-  kompile $1/$1.k -O3
+  kompile $1/$1.k --backend llvm -O3
 }
 
 function kompile_semantics_if_not_yet ()
