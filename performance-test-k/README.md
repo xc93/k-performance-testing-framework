@@ -5,7 +5,8 @@ This K performance testing framework can run multiple programs in multiple progr
 1. Prepare the K definition `lang/lang.k` for each languages `lang`.
   * `lambdasubst` is given as an example;
   * `lang` must use `$PGM:Pgm` as the input program variable in its configuration definition;
-  * Avoid complex K features, such as `[macro]` attribute.
+  * Avoid complex K features;
+  * Use parentheses to avoid parsing issues.
 2. Prepare the test programs `prog` for language `lang` in `lang/test-programs`, for each langauge `lang`;
   * The directory must be named `test-programs`.
 3. Prepare the testing profile `profile`, where each line consists of `lang prog`, where `lang` is the language and `prog` is the program. 
