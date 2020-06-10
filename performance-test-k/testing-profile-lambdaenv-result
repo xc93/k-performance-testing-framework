@@ -1,0 +1,21 @@
+program.language execution-time user-time system-time
+factorial10.lambdaenv 0.01 0.01 0.00
+factorial100.lambdaenv 0.01 0.01 0.00
+factorial1000.lambdaenv 0.02 0.02 0.00
+factorial10000.lambdaenv 0.62 0.60 0.02
+factorial100000.lambdaenv >=60s
+factorialtailrec10.lambdaenv 0.01 0.01 0.00
+factorialtailrec100.lambdaenv 0.02 0.01 0.00
+factorialtailrec1000.lambdaenv 0.05 0.05 0.00
+factorialtailrec10000.lambdaenv crashed
+factorialtailrec100000.lambdaenv crashed
+collatz10.lambdaenv 0.01 0.01 0.00
+collatz100.lambdaenv crashed
+collatz1000.lambdaenv crashed
+collatz10000.lambdaenv crashed
+collatz100000.lambdaenv crashed
+collatztailrec10.lambdaenv 0.02 0.01 0.00
+collatztailrec100.lambdaenv crashed
+collatztailrec1000.lambdaenv crashed
+collatztailrec10000.lambdaenv crashed
+collatztailrec100000.lambdaenv crashed

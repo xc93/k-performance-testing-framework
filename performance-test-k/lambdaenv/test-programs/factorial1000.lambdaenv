@@ -1,0 +1,5 @@
+let input = 1000 in
+(let rec fac n =
+    (if n <= 1 then 1
+     else (n * (fac(n - 1))))
+in (fac input))

@@ -1,0 +1,21 @@
+program.language execution-time user-time system-time
+factorial10.lambdasubst 0.01 0.01 0.00
+factorial100.lambdasubst 0.02 0.01 0.00
+factorial1000.lambdasubst 0.02 0.02 0.00
+factorial10000.lambdasubst 0.08 0.06 0.02
+factorial100000.lambdasubst 2.29 1.95 0.15
+factorialtailrec10.lambdasubst 0.02 0.01 0.00
+factorialtailrec100.lambdasubst 0.01 0.01 0.00
+factorialtailrec1000.lambdasubst 0.03 0.02 0.00
+factorialtailrec10000.lambdasubst 0.12 0.11 0.00
+factorialtailrec100000.lambdasubst 2.54 2.33 0.03
+collatz10.lambdasubst 0.02 0.01 0.00
+collatz100.lambdasubst 0.06 0.06 0.00
+collatz1000.lambdasubst 0.82 0.82 0.00
+collatz10000.lambdasubst 12.83 12.83 0.00
+collatz100000.lambdasubst >=60s
+collatztailrec10.lambdasubst 0.02 0.01 0.01
+collatztailrec100.lambdasubst 0.13 0.13 0.00
+collatztailrec1000.lambdasubst 1.74 1.73 0.01
+collatztailrec10000.lambdasubst 22.87 22.86 0.00
+collatztailrec100000.lambdasubst >=60s

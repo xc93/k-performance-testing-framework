@@ -1,0 +1,8 @@
+let bound = 10 in
+(let rec collatz x acc =
+    (if x <= 1 then acc
+     else (if (x / 2) * 2 = x then (collatz (x / 2) (acc + 1))
+     else (collatz (3 * x + 1) (acc + 1))))
+in (let rec iter n stepsum =
+     (if n = 0 then stepsum else (iter (n - 1) (stepsum + (collatz n 0))))
+in (iter bound 0)))

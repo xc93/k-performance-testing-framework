@@ -29,8 +29,10 @@ function time_program ()
   rm -f $kore_file_path
   if [[ "$time_result" == *"Terminated"* ]]; 
   then echo "$prog.$lang" ">=$TIMEOUT"
+  else if [[ "$time_result" == *"core dumped"* ]];  
+  then echo "$prog.$lang" "crashed"
   else echo "$prog.$lang" "$time_result"
-  fi
+  fi fi
 }
 
 function remove_kompiled_definitions ()
@@ -46,6 +48,7 @@ function run_profile ()
 { # argument $1: test profile
   local test_profile=$1
   local output_file=$1-result
+  echo "program.language execution-time user-time system-time" >> $output_file
   while read -r lang prog; do
     kompile_semantics_if_not_yet $lang
     echo "running $prog.$lang..."
